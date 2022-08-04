@@ -1,0 +1,18 @@
+server:
+  port: 8003
+spring:
+  application:
+    name: nacos-consumer
+  cloud:
+    discovery:
+      server-addr: localhost:8848
+    config:
+      server-addr: localhost:8848
+      #这里改成yaml，获取配置文件的时候就是有问题，所以还是使用properties
+      file-extension: properties
+
+
+
+
+
+
